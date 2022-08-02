@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*================ GENERAL STYLES ===============
+
+                    COLORS
+
+#2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff
+
+                    FONTS
+
+            Graphik, TiemposHeadline, Theinhardt */
+
+@font-face {
+    font-family: "Graphik";
+    src: url('../fonts/Graphik-Regular.woff');
+}
+
+@font-face {
+    font-family: "GraphikBold";
+    src: url('../fonts/Graphik-Medium.ttf');
+}
+
+@font-face {
+    font-family: "TiemposHeadline";
+    src: url('../fonts/TiemposHeadline-Semibold.woff');
+}
+
+@font-face {
+    font-family: "Theinhardt";
+    src: url('../fonts/Theinhardt-Lt.woff');
+}
+
+/*==================== HEADER ====================*/
+header {
+    display: inline;
+}
+
+header section {
+    background: url("../img/home_hero.png") cover / center no-repeat;
+    width: 100%
+    /* height: 100vh; */
+}
+
+header section img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    text-align: left;
+    display: flex;
+    list-style: none;
+    margin: 4vh 8%;
+}
+
+nav ul li {
+    margin: 0 10%;
+}
+
+nav a {
+    font-family: "Graphik";
+    text-decoration: none;
+    color: black;
+    display: inline;
+}
+
+nav a:hover {
+    color: #9FA2A7;
+}
+
+/* DESIGN CRITIQUE */
+header nav span:nth-of-type(1) {
+    font-family: "TiemposHeadline";
+    font-size: 1.5em;
+    display: inline;
+    margin: 3vh 0 0 10%;
+}
+
+/* GET STARTED */
+header nav span:nth-of-type(2) {
+    font-family: "Graphik";
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin: 3vh 10%;
+    padding: 1vh 5%;
+    display: inline;
+    text-align: right;
+}
+
+header nav span:nth-of-type(2):hover {
+    background: #000;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+/* HEADER SECTION */
+
+/* Get your design */
+h1 {
+    font-family: "Graphik";
+    font-size: 2.5em;
+    text-align: center;
+    margin: 5vh 0;
+}
+
+/* We will review your designs */
+header section p {
+    font-family: "GraphikBold";
+    width: 35%;
+    line-height: 1.5em;
+    margin: 15vh 0 0 10%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* header section:nth-of-type(1) {
+    display: flex;
+} */
+
+header section div:nth-of-type(1) {
+    flex-basis: 60%;
+    display: flex;
+}
+
+header section div:nth-of-type(2) {
+    flex-basis: 40%;
+    display: flex;
+}
+
+/* $149 */
+header section div:nth-of-type(2) span {
+    font-family: "Theinhardt";
+    font-size: 3em;
+    flex-basis: 60%;
+    display: flex;
+}
+
+/* Flat rate for the design critique */
+header section aside p {
+    font-family: "Theinhardt";
+    color: #9FA2A7;
+
+    display: inline;
+}
+
+/*===================== MAIN =====================*/
+
+/* SECTION 1 - DELIVERABLES */
+
+main section:nth-of-type(1) div:nth-of-type(1) {
+    background: url("../img/home_deliverables.png");
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) {
+    background: url("../img/home_how_it_works.png");
+}
+
+main section:nth-of-type(3) {
+    background: url("../img/28.png");
+}
+
+/* DELIVERABLES */
+h2 {
+    font-size: 3.5em;
+    font-family: "TiemposHeadline";
+}
+
+/* SECTION 2 - HOW IT WORKS */
+
+main section:nth-of-type(2) {
+    background: #F1F1F4;
+    padding: 10vh 10%;
+    margin: 10vh 10%;
+    display: flex;
+}
+
+h4 {
+    font-size: 3.5em;
+    font-family: "TiemposHeadline";
+    margin: 0 5%;
+    text-align: left;
+}
+
+main section:nth-of-type(2) div:nth-of-type(1) {
+    flex-basis: 50%;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) {
+    background: url("../img/home_how_it_works.png") center / 100% no-repeat;
+    flex-basis: 50%;
+}
+
+/*==================== FOOTER ====================*/
+
+footer {
+    display: inline;
+}
+
+h5 {
+    font-family: "TiemposHeadline";
+    font-size: 3em;
+    text-align: center;
+    border-top: 1px solid black;
+    /* text-decoration: overline; */
+    /* margin-top: 10vh; */
+}
